@@ -7,7 +7,7 @@ from werkzeug.utils import secure_filename
 
 app = Flask(__name__)
 
-app.config['MONGO_URI'] = 'mongodb+srv://admin123:admin123@sample-tfh3q.mongodb.net/test?retryWrites=true&w=majority'
+app.config['MONGO_URI'] = 'conn url '
 app.config['IMAGE_UPLOADS'] = '/home/anonymous/Desktop/core/static/img/uploads'
 app.config['ALLOWED_IMAGE_EXTENSIONS'] =['PNG','JPG','JPEG','GIF','SVG']
 
@@ -59,7 +59,3 @@ def profile(username):
 
 if __name__ == '__main__':
     app.run(debug=True)
-# references 
-
-    #   https://www.youtube.com/watch?v=DsgAuceHha4
-    #   https://www.youtube.com/watch?v=6WruncSoCdI
